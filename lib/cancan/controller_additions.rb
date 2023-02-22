@@ -386,9 +386,3 @@ module CanCan
     end
   end
 end
-
-if defined? ActiveSupport
-  ActiveSupport.on_load(:action_controller) do
-    include CanCan::ControllerAdditions
-  end
-end
